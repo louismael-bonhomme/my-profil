@@ -1,0 +1,158 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css" >
+    </head>
+
+    <body>
+      <div class="container">
+        
+        
+            <h2 strong div class="card" id="ocon"> Esteban Ocon
+            </h2></div>
+           
+         <br>
+         
+         <a href="index2.html">
+          
+           <div class="images">
+             <img id="est" src="images/est2.jpeg" alt="image estban ocon">
+             <img id="est" src="estban.png" alt="image estban ocon"> 
+             <img id="est" src="images/est1.jpeg" alt="image estban con"> 
+           </div>
+          
+         </a>
+         <br>
+
+         <div class="card petit">
+            <h3>DESCRIPTION</h3>
+    
+            <p> Esteban Ocon, né le 17 septembre 1996 à Évreux (Eure), est un pilote 
+                automobile français. Vainqueur du championnat d'Europe de Formule 3 en 2014 puis du championnat de GP3 Series 2015, il fait ses débuts en Formule 1 l'année suivante,
+                au sein de l'écurie Manor Racing et devient, à 19 ans et 345 jours, le plus jeune Français à prendre le départ d'une épreuve de Formule 1.
+            </p>  
+         </div> 
+
+         <br>
+
+         <div class="card  petit">
+          <h3>DATES CLÉS</h3>
+  
+          <ul>
+            <li> 1996-2011 : jeunesse et karting </li> 
+            <li> 2012-2013 : débuts en monoplace </li> 
+            <li> 2014 : titre en Formule 3 et tests en Formule 1 </li> 
+            <li> 2015 : soutien de Mercedes et sacre en GP3 Series</li> 
+            <li> 2016 : pilote de réserve chez Renault et demi-saison en DTM</li> 
+            <li> 2016 : débuts en cours de saison chez Manor</li> 
+            <li> 2017-2018 : deux années avec Force India</li> 
+            <li> 2020 : arrivée chez Renault F1 Team et premier podium</li> 
+            <li> 2021 : première victoire en Formule 1</li> 
+          </ul>
+         </div> 
+
+         <br>
+
+         <div class="card  petit">
+         <h3> CES ANCIENNES ÉCURIES : </h3>
+          
+            <ul>
+             <li> 2016 : Manor Racing MRT </li> 
+             <li> 2017 : Sahara Force India F1 Team </li> 
+             <li> 2018 : Racing Point Force India F1 Team </li> 
+             <li> 2020 : Renault DP World F1 Team</li> 
+             <li> 2021 : Alpine F1 Team</li> 
+             <li> 2022 : BWT Alpine F1 Team</li> 
+           </ul> 
+         
+         </div>
+
+
+         <br>
+
+
+         <div class="card  tutu">
+            <h3 id="contact"> contacter Esteban Ocon</h3>
+           <ul> <div class="reso">
+            <li><a href="https://www.instagram.com/estebanocon/?hl=fr" target="_blank" title="Instagram"> <image src="images/instagram.png"></image></a></li>
+            <li><a href="https://www.twitter.com/estebanocon/?hl=fr" target="_blank" title="twitter"> <image src="images/Twitter.png"></image></a></li>
+            <li><a href="https://www.tiktok.com/@estebanocon?is_from_webapp=1&sender_device=pc" target="_blank" title="tiktok"> <image src="images/tiktok.jpeg"></image></a></li>
+            </ul></div>
+         </div>
+
+          <div class="card tete ">
+           <h3 class="NEWS"> NEWS</h3>
+           <p>
+            Esteban Ocon, comme Alpine, a été très décevant lors du Grand Prix d'Italie. Il réalise une contre performance en ne finissant que 11ème. Pire, il ne rapporte aucun point à son écurie. 
+            Le week-end devenait compliqué à partir des qualifications. Le pilote d'Alpine n'obtenait que la 11ème meilleure performance le privant ainsi de Q3. Il avait écopé d'une pénalité pour un changement de pièces sur le moteur et devait donc partir de la 14ème position.
+            Pendant le Grand Prix, le Français n'a pas vraiment montré grand-chose durant le Grand Prix et a été bloqué dans le ventre mou de la course. Il était enfermé dans le peloton sans pouvoir attaquer réellement.
+            Avec l'intervention de la Safety Car lors des derniers tours, le pilote n'a pas pu se battre jusqu'au bout pour tenter de récupérer quelques places. Avec les tours qu'il restait, qui sait ce qu'Esteban Ocon aurait pu réaliser.  
+           </p>
+          </div>
+
+         </div>
+
+
+         <SCRIPT LANGUAGE="JavaScript">
+        
+          if (document.getElementById)
+            {fromPub = 0;
+            iVolePub = new Image;
+            iVolePub.src = "../../img/ow.gif";
+            offsetyPub=0;
+            HauteurPub = 0;
+            place = fromPub;
+            xpub = 1;
+            ypub = 1;}
+          
+          function RandomDep()
+            {numimagePub= Math.round(Math.random()*4);
+            numimagePub ++;
+            return(numimagePub);}
+          
+          function VolimPub()
+            {if(document.all)
+              {EcranlargPub = document.body.clientWidth-iVolePub.width;
+              EcranhautPub = document.body.clientHeight-iVolePub.height;}
+            else
+              {EcranlargPub = screen.width-10;
+              EcranhautPub = screen.height-10;}
+            if (document.getElementById)
+              {if (place > EcranlargPub)
+                xpub = (-(RandomDep()));
+              if (place < fromPub)
+                xpub = RandomDep();
+              document.getElementById("pubBulle").style.left = (place = place + xpub);
+              document.getElementById("pubBulle").style.top = (HauteurPub += ypub)+offsetyPub;
+              if (HauteurPub>EcranhautPub)
+                ypub = (-(RandomDep()));
+              if (HauteurPub<0)
+                ypub = RandomDep();
+              tempo36 = setTimeout('VolimPub()', 2);	}}
+          
+          function OffSet()
+            {if (navigator.appName=="Microsoft Internet Explorer")
+                 offsetyPub = document.body.scrollTop;}
+          window.onload = VolimPub;
+          onscroll = OffSet;
+          </SCRIPT>
+          </head>
+          
+          
+          
+          
+          <SCRIPT LANGUAGE="JavaScript">
+          if (document.getElementById)
+            {
+            document.write('<DIV ID="pubBulle" onMouseOver="clearTimeout(tempo36)" onMouseOut="VolimPub()" ')
+            document.write('STYLE="position:absolute; top:200px; left:-100px; z-index: -1; pub:10"> ')
+            /*placez l'ul de votre pub et la balise title*/
+            document.write('<A HREF="https://www.instagram.com/sltclouismael/" TARGET="_blank"><IMG SRC="moi.jpeg" BORDER=0 HSPACE=0 VSPACE=0 ></A></DIV>');
+            }
+          </SCRIPT>
+          
+
+      </div>
+    </body>
+
+</html>

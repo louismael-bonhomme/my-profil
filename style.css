@@ -1,0 +1,159 @@
+body {
+    background-color:  #133463; 
+    font-family: Arial black;
+    margin: 0px ;
+   
+
+}
+h1 {
+    color: #133463;
+    font-size: x-small;
+    font-family: Arial black;
+}
+h2{ color: #133463;
+font-size: 100px;
+font-family: Arial black;
+text-align: center;
+}
+
+h3{
+    color: #133463;
+    font-family: Arial black;
+    font-size: x-large;
+}
+img{
+    width: 50px ;
+    display: block;
+    margin-left: 0%;
+    
+   
+
+}
+#est{
+    width: 300px ;
+   
+    border-radius: 10%;
+  
+}
+
+p{
+    color: rgb(219, 173, 73);
+    
+font-family: Arial black;
+}
+h4{
+    font-family: Arial black;
+    color: #3c3c3c;
+    font-size: x-large;
+}
+ul{
+    list-style-type: none;
+    font-family: Arial black;
+    color: rgb(219, 173, 73)
+    
+}
+
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    display: block;
+    background-color: #ffffff;
+    padding: 10px;
+border-radius: 20px;
+box-shadow:  6px 6px 6px rgb(4, 3, 93);
+}
+
+.reso{
+    
+    justify-content: center ;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+
+   
+}
+#ocon{
+    margin-left: auto;
+    margin-right: auto;
+   
+    width: 1300px;
+    height: 80px; 
+    display: block;
+    background-color: #ffffff;
+   
+  
+   padding-bottom: 65px;
+
+
+}
+.petit{
+    width: 700px;
+    margin-left: 500px;
+    margin-right: auto;
+    text-align: center;
+}
+.gauche{
+    margin-left: 0px;
+    
+    width: 180px;
+    height: 2000px; ;
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px;
+
+}
+
+
+
+#jaune { 
+    width: 570px;
+    height: 300px;  
+}
+#bleu { 
+    width: 570px;
+    height: 300px;   
+}
+#rouge { 
+    width: 570px;
+    height: 300px;    
+}
+#vert { 
+    width: 570px;
+    height: 300px;  
+}
+.image2{
+    display: flex;
+    justify-content: left;
+}
+.tete {
+
+    position: absolute; top: 485px; left: 10px;
+    width: 300px;
+    height: 750px; 
+    margin-left: 50px;
+}
+.news{
+    font-size: 200%;
+    text-align: center;
+}
+
+.tutu {
+
+    position: absolute; top: 1300px; left: 10px;
+    width: 300px;
+    height: 150px; 
+    margin-left: 50px;
+}
+#contact{
+    font-size: 140%;
+}

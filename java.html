@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Scripts javascript : Aper�u</title>
+<SCRIPT LANGUAGE="JavaScript">
+/*
+Source :  http://www.editeurjavascript.com
+ Adaptation : http://www.outils-web.com
+*/
+if (document.getElementById)
+	{fromPub = 0;
+	iVolePub = new Image;
+	/*url de l'image*/
+	iVolePub.src = "../../img/ow.gif";
+	offsetyPub=0;
+	HauteurPub = 0;
+	place = fromPub;
+	xpub = 1;
+	ypub = 1;}
+
+function RandomDep()
+	{numimagePub= Math.round(Math.random()*4);
+	numimagePub ++;
+	return(numimagePub);}
+
+function VolimPub()
+	{if(document.all)
+		{EcranlargPub = document.body.clientWidth-iVolePub.width;
+		EcranhautPub = document.body.clientHeight-iVolePub.height;}
+	else
+		{EcranlargPub = screen.width-100;
+		EcranhautPub = screen.height-100;}
+	if (document.getElementById)
+		{if (place > EcranlargPub)
+			xpub = (-(RandomDep()));
+		if (place < fromPub)
+			xpub = RandomDep();
+		document.getElementById("pubBulle").style.left = (place = place + xpub);
+		document.getElementById("pubBulle").style.top = (HauteurPub += ypub)+offsetyPub;
+		if (HauteurPub>EcranhautPub)
+			ypub = (-(RandomDep()));
+		if (HauteurPub<0)
+			ypub = RandomDep();
+		tempo36 = setTimeout('VolimPub()', 20);	}}
+
+function OffSet()
+	{if (navigator.appName=="Microsoft Internet Explorer")
+   		offsetyPub = document.body.scrollTop;}
+window.onload = VolimPub;
+onscroll = OffSet;
+</SCRIPT>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<br /><p class="tt" >Votre pub qui se prom�ne sur l'�cran</p><br /><br />
+
+<SCRIPT LANGUAGE="JavaScript">
+if (document.getElementById)
+	{
+	document.write('<DIV ID="pubBulle" onMouseOver="clearTimeout(tempo36)" onMouseOut="VolimPub()" ')
+	document.write('STYLE="position:absolute; top:200px; left:-100px; z-indexpub:10"> ')
+	/*placez l'ul de votre pub et la balise title*/
+	document.write('<A HREF="http://www.outils-web.com/pc.asp?cod=gall" TARGET="_blank"><IMG SRC="'+iVolePub.src+'" BORDER=0 HSPACE=0 VSPACE=0 title="cr�ez votre diaporama flash"></A></DIV>');
+	}
+</SCRIPT>
+
+
+</body>
+</html>
